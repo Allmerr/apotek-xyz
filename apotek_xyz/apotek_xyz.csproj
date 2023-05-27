@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DC75422-80DC-4731-A71C-6EFC79862CB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>apotek_xyz</RootNamespace>
+    <AssemblyName>apotek_xyz</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="connection.cs" />
+    <Compile Include="FAdmin_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdmin_Home.Designer.cs">
+      <DependentUpon>FAdmin_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAdmin_Laporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdmin_Laporan.Designer.cs">
+      <DependentUpon>FAdmin_Laporan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAdmin_Obat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdmin_Obat.Designer.cs">
+      <DependentUpon>FAdmin_Obat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAdmin_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdmin_User.Designer.cs">
+      <DependentUpon>FAdmin_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FApoteker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FApoteker.Designer.cs">
+      <DependentUpon>FApoteker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCostumer_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCostumer_Profile.Designer.cs">
+      <DependentUpon>FCostumer_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCostumer_Transaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCostumer_Transaksi.Designer.cs">
+      <DependentUpon>FCostumer_Transaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDaftar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDaftar.Designer.cs">
+      <DependentUpon>FDaftar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKasir.Designer.cs">
+      <DependentUpon>FKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAdmin_Home.resx">
+      <DependentUpon>FAdmin_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAdmin_Laporan.resx">
+      <DependentUpon>FAdmin_Laporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAdmin_Obat.resx">
+      <DependentUpon>FAdmin_Obat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAdmin_User.resx">
+      <DependentUpon>FAdmin_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FApoteker.resx">
+      <DependentUpon>FApoteker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCostumer_Transaksi.resx">
+      <DependentUpon>FCostumer_Transaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDaftar.resx">
+      <DependentUpon>FDaftar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKasir.resx">
+      <DependentUpon>FKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\gambar-logo-apotek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\gambar-logo-kesehatan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\gambar-admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\gambar-logo-admin.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
